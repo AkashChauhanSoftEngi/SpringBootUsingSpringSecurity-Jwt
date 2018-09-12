@@ -40,16 +40,16 @@ Spring Boot + Spring Security {In Memory Authentication} + JWT {JSON Web Token} 
 * First login to create and receive a token from the response header{if added there}
 * We can understand this whole flow in 3 steps.
   1. To create this token, there are few tasks at server side need to be done
-    - If using spring security and AuthenticationManagerBuilder, then verify user credentials
-    - If user exist in the DB, then move to next step to create token
-    - Create New token using user credentials
-    - Add this token to response header and return
-    - If user does not exist then throw error, user does not exist
+     - If using spring security and AuthenticationManagerBuilder, then verify user credentials
+     - If user exist in the DB, then move to next step to create token
+     - Create New token using user credentials
+     - Add this token to response header and return
+     - If user does not exist then throw error, user does not exist
   2. Now you can send a request with this Authorize token in the desired request Header
   3. When you hit any other API using this token, there are few tasks at server side need to be done
-    - Validate this token
-    - if valid then give access to resource
-    - if not valid then give access denied error
+     - Validate this token
+     - if valid then give access to resource
+     - if not valid then give access denied error
   
 > **###6. Classes/Interfaces/Methods involved**
 * authenticationManager() from WebSecurityConfigurerAdapter to set AuthenticationManager
