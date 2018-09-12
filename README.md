@@ -18,9 +18,9 @@ Spring Boot + Spring Security {In Memory Authentication} + JWT {JSON Web Token} 
 > **###4. Important things to keep in mind**
 * JWT: Java Web Tokens
 * JWT is split into three majot parts
-  1-Header {"typ": "JWT", "alg": "HS256"}
-  2-Payload{real message/data}{"username":"abc", "password":"xyz"}
-  3-Signature{merge Header and Payload, and Encoded it with Signature}
+  1-	Header {"typ": "JWT", "alg": "HS256"}
+  2-	Payload{real message/data}{"username":"abc", "password":"xyz"}
+  3-	Signature{merge Header and Payload, and Encoded it with Signature}
 * Format of the token {3 parts}
   - Header.Payload.Signatuer
   - each part is base64
