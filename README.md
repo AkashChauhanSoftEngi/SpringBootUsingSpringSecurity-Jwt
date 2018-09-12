@@ -38,7 +38,7 @@ Spring Boot + Spring Security {In Memory Authentication} + JWT {JSON Web Token} 
 
 > **###5. JWT Work Flow**
 * First login to create and receive a token from the response header{if added there}
-* We can understand this whole flow in 3 steps
+* We can understand this whole flow in 3 steps.
   A. To create this token, there are few tasks at server side need to be done
    	- If using spring security and AuthenticationManagerBuilder, then verify user credentials
     	- If user exist in the DB, then move to next step to create token
