@@ -16,7 +16,7 @@ Spring Boot + Spring Security {In Memory Authentication} + JWT {JSON Web Token} 
 * http://localhost:8080/users
 
 > **###4. Important things to keep in mind**
-* JWT: Java Web Tokens
+* JWT: JSON Web Tokens
 * JWT is split into three majot parts
   1. Header {"typ": "JWT", "alg": "HS256"}
   2. Payload{real message/data}{"username":"abc", "password":"xyz"}
